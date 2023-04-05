@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary  = "Fluentd plugin to collect Windows metrics (memory, cpu, network, etc.)"
   s.authors  = ["Fujimoto Seiji", "Fukuda Daijiro"]
   s.email    = ["fujimoto@clear-code.com", "fukuda@clear-code.com"]
-  s.files    = FileList['lib/**/*.rb', 'LICENSE', 'README.md'].to_a
+  s.files    = `git ls-files`.split("\n")
   s.homepage = "https://github.com/fluent-plugins-nursery/fluent-plugin-windows-exporter"
 
   s.require_paths = ["lib"]
